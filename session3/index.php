@@ -75,10 +75,21 @@ $persons_api2 = [
     ]
  ];
 
-echo "<pre>";
-print_r($persons_api1);
-echo "<hr>";
-print_r($persons_api2);
+ $person_api1_keys = array_keys($persons_api1[0]);
+//  print_r($person_api1);
+ foreach($persons_api2 as $person){
+    // array_push($persons_api1,[
+    //     $person_api1_keys[0] => $person['fname'],
+    //     $person_api1_keys[1] => $person['lname'],
+    //     $person_api1_keys[2] => $person['age']
+    // ]);
+ }
+
+// echo "<pre>";
+// print_r($persons_api1);
+// echo "<hr>";
+// print_r($persons_api2);
+
 // foreach($number as  $k => $key){
 //     echo $k."<br>";
 // }
